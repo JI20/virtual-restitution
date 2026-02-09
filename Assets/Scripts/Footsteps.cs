@@ -7,44 +7,49 @@ public class Footsteps : MonoBehaviour
     public AudioClip[] stepSounds;
 
     [Header("Geschwindigkeit")]
-    [Tooltip("Zeit in Sekunden zwischen Schritten. Kleinerer Wert = Schnellere Schritte.")]
+    [Tooltip("Zeit in Sekunden zwischen Schritten.")]
     [Range(0.2f, 0.8f)] 
-    public float stepInterval = 0.35f; // Standardwert auf 0.35 gesenkt (war 0.5)
+    public float stepInterval = 0.35f;
+
+    // NEU: Ein etwas höherer Schwellenwert für VR, um Zittern zu ignorieren
+    [Tooltip("Wie schnell muss man sein, damit Schritte ausgelöst werden?")]
+    public float movementThreshold = 0.5f; 
 
     private float stepTimer;
     private Vector3 lastPosition;
 
     void Start()
     {
-        // Falls vergessen, holen wir uns die AudioSource automatisch
         if(audioSource == null) audioSource = GetComponent<AudioSource>();
-        
         lastPosition = transform.position;
     }
 
     void Update()
     {
-        // Wir berechnen die Geschwindigkeit rein über die Positionsänderung
-        // Das funktioniert mit JEDEM Input-System (Alt oder Neu)
-        float speed = Vector3.Distance(transform.position, lastPosition) / Time.deltaTime;
-        
-        lastPosition = transform.position;
+        // NEU: Wir ignorieren die Höhe (Y-Achse). 
+        // Wir erstellen temporäre Vektoren, die nur X und Z beachten.
+        Vector3 currentFlatPos = new Vector3(transform.position.x, 0, transform.position.z);
+        Vector3 lastFlatPos = new Vector3(lastPosition.x, 0, lastPosition.z);
 
-        // Wenn wir uns schneller als 0.1 Einheiten bewegen
-        if (speed > 0.1f) 
+        // Geschwindigkeit basierend auf horizontaler Bewegung berechnen
+        float speed = Vector3.Distance(currentFlatPos, lastFlatPos) / Time.deltaTime;
+        
+        lastPosition = transform.position; // Position für nächsten Frame merken
+
+        // NEU: Prüfung gegen den neuen, höheren Threshold (statt fest 0.1f)
+        if (speed > movementThreshold) 
         {
             stepTimer -= Time.deltaTime;
 
             if (stepTimer <= 0)
             {
                 PlayStep();
-                stepTimer = stepInterval; // Timer zurücksetzen
+                stepTimer = stepInterval;
             }
         }
         else
         {
-            // Wenn wir stehen, Timer auf 0 setzen, 
-            // damit beim Loslaufen der erste Schritt SOFORT kommt
+            // Wenn wir stehen (oder nur zittern), Timer resetten
             stepTimer = 0;
         }
     }
@@ -53,13 +58,9 @@ public class Footsteps : MonoBehaviour
     {
         if (stepSounds == null || stepSounds.Length == 0) return;
 
-        // Zufälligen Sound auswählen
         int n = Random.Range(0, stepSounds.Length);
-
-        // Minimale Variation bei Lautstärke und Tonhöhe für mehr Realismus
         audioSource.volume = Random.Range(0.9f, 1.0f);
         audioSource.pitch = Random.Range(0.95f, 1.05f);
-
         audioSource.PlayOneShot(stepSounds[n]);
     }
 }
