@@ -192,15 +192,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -7.51
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.46
+      value: -14.395
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.17
+      value: 167.2
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       propertyPath: m_LocalRotation.w
@@ -240,6 +240,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 918748999}
+    - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 918749005}
     - targetCorrespondingSourceObject: {fileID: 1767192433, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1401591269}
@@ -320,6 +323,26 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e524cf67a51f0474795392d46acbad0b, type: 3}
   stepInterval: 0.5
   movementThreshold: 0.5
+--- !u!114 &918749005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886818753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa696d5b05aae1441b7292d745ba2473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Walker
+  playerCamera: {fileID: 1401591270}
+  moveSpeed: 5
+  gravity: 9.81
+  mouseSensitivity: 0.5
+  keyForward: 37
+  keyBack: 33
+  keyLeft: 15
+  keyRight: 18
 --- !u!1 &925182283
 GameObject:
   m_ObjectHideFlags: 0
@@ -461,7 +484,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401591262}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c8bb34455bc6124f80467e815cabe88, type: 3}
   m_Name: 
@@ -498,6 +521,11 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1401591270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1767192434, guid: f311dc132927f264d8cae6aa4f0a9b43, type: 3}
+  m_PrefabInstance: {fileID: 441087506}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2092139007
 GameObject:
   m_ObjectHideFlags: 0
