@@ -257,6 +257,9 @@ public class ContainerTransition : MonoBehaviour
         }
 
         yield return SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+
+        // Make room3 the active scene so its skybox and lighting settings take over
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneToLoad));
     }
 
     private IEnumerator FlickerLight()

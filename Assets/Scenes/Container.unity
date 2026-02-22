@@ -1172,7 +1172,7 @@ MonoBehaviour:
   - room1
   - room2
   sceneToLoad: room3
-  totalSequenceTime: 15
+  totalSequenceTime: 5
 --- !u!1 &1952949075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8668425192904641702, guid: 78fbcfb915dfd1648ae3e7d6c69b1fb5, type: 3}
