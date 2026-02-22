@@ -211,6 +211,19 @@ MonoBehaviour:
   rounded:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &-1216687228348207383
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf98a4a63d53254f8d6557c59e24b49, type: 3}
+  m_Name: FullScreenRendererFeature2VolumeComponent
+  m_EditorClassIdentifier: Assembly-CSharp::Mirza.VFXToolKit.FullScreenRendererFeature2VolumeComponent
+  active: 1
 --- !u!114 &-324871269950643110
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -310,6 +323,7 @@ MonoBehaviour:
   - {fileID: 1563326871748030085}
   - {fileID: -5386571787587349074}
   - {fileID: 2609520313565454508}
+  - {fileID: -1216687228348207383}
 --- !u!114 &14229295411216620
 MonoBehaviour:
   m_ObjectHideFlags: 3

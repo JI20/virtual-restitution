@@ -151,6 +151,7 @@ MonoBehaviour:
   szenenNamen:
   - room1
   - room2
+  - Container
 --- !u!4 &30253691
 Transform:
   m_ObjectHideFlags: 0
