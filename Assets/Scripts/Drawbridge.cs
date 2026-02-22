@@ -2,11 +2,15 @@ using UnityEngine;
 
 public class Drawbridge : MonoBehaviour
 {
-    public GameObject bridgePart; // Das Teil aus Blender
+    public GameObject bridgePart; 
     public Vector3 fallRotation = new Vector3(0, 90, 0);
-    public float acceleration = 50.0f; // Wie schnell die Brücke an Fahrt gewinnt
-    private float currentSpeed = 0.0f;
+    public float acceleration = 50.0f; 
+    
+    [Header("Audio Einstellungen")]
+    public AudioSource audioSource; // Der Lautsprecher am Objekt
+    public AudioClip fallSound;     // Die Sounddatei
 
+    private float currentSpeed = 0.0f;
     private bool isFalling = false;
     private Quaternion targetRot;
 
@@ -19,23 +23,31 @@ public class Drawbridge : MonoBehaviour
     }
 
     void Update()
-{
-    if (isFalling && bridgePart != null)
     {
-        // Die Geschwindigkeit nimmt über Zeit zu
-        currentSpeed += acceleration * Time.deltaTime;
+        if (isFalling && bridgePart != null)
+        {
+            currentSpeed += acceleration * Time.deltaTime;
 
-        bridgePart.transform.localRotation = Quaternion.RotateTowards(
-            bridgePart.transform.localRotation, 
-            targetRot, 
-            currentSpeed * Time.deltaTime
-        );
+            bridgePart.transform.localRotation = Quaternion.RotateTowards(
+                bridgePart.transform.localRotation, 
+                targetRot, 
+                currentSpeed * Time.deltaTime
+            );
+        }
     }
-}
 
-    // Diese Funktion wird aufgerufen, sobald IRGENDWAS den Cube berührt
     private void OnTriggerEnter(Collider other)
     {
-        isFalling = true;
+        // Nur abspielen, wenn sie nicht schon am Fallen ist
+        if (!isFalling)
+        {
+            isFalling = true;
+
+            // Sound abspielen
+            if (audioSource != null && fallSound != null)
+            {
+                audioSource.PlayOneShot(fallSound);
+            }
+        }
     }
 }
