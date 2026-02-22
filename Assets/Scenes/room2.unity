@@ -146,6 +146,91 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3276497705138354885, guid: 213fb7c3d47d2b9429321f118b09fa56, type: 3}
+--- !u!4 &182523881 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 1480709787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &222365610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 1152950268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &224355932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224355933}
+  m_Layer: 0
+  m_Name: DrawBridgesLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &224355933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224355932}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: -54.570007, y: 7.63, z: 105.670006}
+  m_LocalScale: {x: 5.72293, y: 1, z: 5.7400947}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1548610801}
+  - {fileID: 297629605}
+  - {fileID: 1974709678}
+  - {fileID: 880221927}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &297629605 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 2033260705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &303791358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 303791359}
+  m_Layer: 0
+  m_Name: DrawBridgesRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &303791359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303791358}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: -0.5}
+  m_LocalPosition: {x: 39.47, y: 7.63, z: 105.670006}
+  m_LocalScale: {x: 5.72293, y: -1, z: 5.7400947}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 222365610}
+  - {fileID: 1687521599}
+  - {fileID: 1607187356}
+  - {fileID: 182523881}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &374015585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4381291128928429418, guid: 9a179503f14a8cb4189b315a53f1ce84, type: 3}
@@ -340,6 +425,71 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3268347525203231415, guid: 213fb7c3d47d2b9429321f118b09fa56, type: 3}
+--- !u!1001 &711996902
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 224355933}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.201327
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
 --- !u!1 &878398601 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5667284652295393890, guid: b7ad156c4aa781d4a9936a0421e504cf, type: 3}
@@ -367,6 +517,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2346428509227581198, guid: 213fb7c3d47d2b9429321f118b09fa56, type: 3}
+--- !u!4 &880221927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 1934967507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &898000204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 303791359}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.7078
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
 --- !u!1 &913318142
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +819,128 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1152950268
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 303791359}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.214273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072407
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+--- !u!1001 &1163127599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 303791359}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.201327
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
 --- !u!1001 &1215298204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8729,6 +9071,76 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 401500724139351067, guid: 213fb7c3d47d2b9429321f118b09fa56, type: 3}
+--- !u!1001 &1480709787
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 303791359}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.694854
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+--- !u!4 &1548610801 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 3063938789455421328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1589937181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6039542612442407660, guid: b7ad156c4aa781d4a9936a0421e504cf, type: 3}
@@ -8755,6 +9167,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.436429, y: 13.513241, z: 0.19999996}
   m_Center: {x: 0.05468458, y: -11.417519, z: 0.052230198}
+--- !u!4 &1607187356 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 1163127599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1687521599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 898000204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1781001389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3301866174041858001, guid: b7ad156c4aa781d4a9936a0421e504cf, type: 3}
@@ -8809,6 +9231,141 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6193274089688118089, guid: 213fb7c3d47d2b9429321f118b09fa56, type: 3}
+--- !u!1001 &1934967507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 224355933}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.694854
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+--- !u!4 &1974709678 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+  m_PrefabInstance: {fileID: 711996902}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2033260705
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 224355933}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.6483
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.421312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.7078
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
 --- !u!1 &2062489115 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6315660270860587963, guid: b7ad156c4aa781d4a9936a0421e504cf, type: 3}
@@ -8949,10 +9506,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1001 &3063938789455421328
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 224355933}
+    m_Modifications:
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.214273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.551006
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.072407
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000005960465
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621134172253750247, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158960930299666096, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
+      propertyPath: m_Name
+      value: DrawBridge
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b6e9bec00c5250743bbe9c298896b74d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 224355933}
+  - {fileID: 303791359}
   - {fileID: 2135040789}
   - {fileID: 497358953}
   - {fileID: 1215298204}
