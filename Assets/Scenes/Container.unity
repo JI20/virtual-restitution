@@ -1150,7 +1150,7 @@ MonoBehaviour:
   containerLight: {fileID: 0}
   doorCloseSound: {fileID: 736129887}
   doorOpenSound: {fileID: 644248118}
-  ambientLoop: {fileID: 0}
+  ambientLoop: {fileID: 1137795357}
   timedCues: []
   randomSounds: []
   randomSoundMinInterval: 2
