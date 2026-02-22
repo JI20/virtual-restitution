@@ -15,11 +15,12 @@ public class ContainerTransition : MonoBehaviour
     [Header("Objects to Control")]
     public GameObject leftDoor;
     public GameObject hiddenPackages;
-    public Light containerLight;
+    public Light[] flickerLights;
 
     [Header("Audio - Door")]
     public AudioSource doorCloseSound;
     public AudioSource doorOpenSound;
+    public AudioSource flickerSound;
 
     [Header("Audio - Transport")]
     [Tooltip("Loops for the entire ride. Great for ocean waves or engine hum.")]
@@ -264,18 +265,57 @@ public class ContainerTransition : MonoBehaviour
 
     private IEnumerator FlickerLight()
     {
-        if (containerLight != null) containerLight.enabled = false;
-        yield return new WaitForSeconds(0.1f);
+        if (flickerSound != null) flickerSound.Play();
 
-        if (containerLight != null) containerLight.enabled = true;
+        // Start dark
+        SetFlickerLights(false);
+
+        // --- Burst 1: two quick flashes, all lights together ---
+        yield return new WaitForSeconds(0.06f);
+        SetFlickerLights(true);
+        yield return new WaitForSeconds(0.04f);
+        SetFlickerLights(false);
+        yield return new WaitForSeconds(0.10f);
+        SetFlickerLights(true);
+        yield return new WaitForSeconds(0.03f);
+        SetFlickerLights(false);
+        yield return new WaitForSeconds(0.15f);
+
+        // --- Burst 2: lights struggle to come on one at a time ---
+        SetFlickerLight(0, true);
         yield return new WaitForSeconds(0.05f);
+        SetFlickerLight(1, true);
+        yield return new WaitForSeconds(0.03f);
+        SetFlickerLights(false);
+        yield return new WaitForSeconds(0.09f);
+        SetFlickerLight(0, true);
+        yield return new WaitForSeconds(0.02f);
+        SetFlickerLight(2, true);
+        yield return new WaitForSeconds(0.06f);
+        SetFlickerLights(false);
+        yield return new WaitForSeconds(0.12f);
 
-        if (containerLight != null) containerLight.enabled = false;
-
-        // Spawn the packages while it is completely dark!
+        // Reveal packages while dark
         //if (hiddenPackages != null) hiddenPackages.SetActive(true);
 
-        yield return new WaitForSeconds(0.4f);
-        if (containerLight != null) containerLight.enabled = true;
+        // --- Final: one last stutter then all settle on ---
+        SetFlickerLights(true);
+        yield return new WaitForSeconds(0.05f);
+        SetFlickerLights(false);
+        yield return new WaitForSeconds(0.04f);
+        SetFlickerLights(true);
+    }
+
+    private void SetFlickerLights(bool on)
+    {
+        if (flickerLights == null) return;
+        foreach (Light l in flickerLights)
+            if (l != null) l.enabled = on;
+    }
+
+    private void SetFlickerLight(int index, bool on)
+    {
+        if (flickerLights == null || index >= flickerLights.Length) return;
+        if (flickerLights[index] != null) flickerLights[index].enabled = on;
     }
 }
