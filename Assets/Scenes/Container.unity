@@ -1959,8 +1959,8 @@ MonoBehaviour:
   containerRoot: {fileID: 1383948128}
   swayAmount: 1.67
   swaySpeed: 0.59
-  vibrationAmount: 0.02
-  vibrationSpeed: 12
+  vibrationAmount: 0.01
+  vibrationSpeed: 2
   shakeFadeDuration: 1.5
   shiftingObjects:
   - {fileID: 552822908}
@@ -1974,7 +1974,7 @@ MonoBehaviour:
   - room1
   - room2
   sceneToLoad: room3
-  totalSequenceTime: 15
+  totalSequenceTime: 2
 --- !u!1 &1952949075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8668425192904641702, guid: 78fbcfb915dfd1648ae3e7d6c69b1fb5, type: 3}
