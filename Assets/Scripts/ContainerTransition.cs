@@ -296,7 +296,7 @@ public class ContainerTransition : MonoBehaviour
         yield return new WaitForSeconds(0.12f);
 
         // Reveal packages while dark
-        //if (hiddenPackages != null) hiddenPackages.SetActive(true);
+        if (hiddenPackages != null) hiddenPackages.SetActive(true);
 
         // --- Final: one last stutter then all settle on ---
         SetFlickerLights(true);
