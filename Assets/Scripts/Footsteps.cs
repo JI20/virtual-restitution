@@ -1,47 +1,65 @@
+using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Footsteps : MonoBehaviour
 {
-    [Header("Einstellungen")]
+    [Header("Audio")]
     public AudioSource audioSource;
-    public AudioClip[] stepSounds;
+    public AudioClip[] defaultSounds;
 
-    [Header("Geschwindigkeit")]
-    [Tooltip("Zeit in Sekunden zwischen Schritten.")]
-    [Range(0.2f, 0.8f)] 
+    [Header("Timing")]
+    [Tooltip("Seconds between footstep sounds.")]
+    [Range(0.2f, 0.8f)]
     public float stepInterval = 0.35f;
+    [Tooltip("Minimum horizontal speed to trigger footsteps.")]
+    public float movementThreshold = 0.5f;
 
-    // NEU: Ein etwas höherer Schwellenwert für VR, um Zittern zu ignorieren
-    [Tooltip("Wie schnell muss man sein, damit Schritte ausgelöst werden?")]
-    public float movementThreshold = 0.5f; 
+    [Header("Surface Zones")]
+    [Tooltip("Assign trigger colliders here. When the player enters one, its sounds override the default.")]
+    public FootstepZone[] zones;
 
-    private float stepTimer;
+    [System.Serializable]
+    public class FootstepZone
+    {
+        public string zoneName;
+        public Collider trigger;
+        public AudioClip[] sounds;
+    }
+
+    // --- private state ---
+    private float   stepTimer;
     private Vector3 lastPosition;
+
+    // Stack of active zones â€” supports overlapping zones, most recent wins
+    private readonly List<FootstepZone> activeZones = new();
+
+    private AudioClip[] CurrentSounds =>
+        activeZones.Count > 0 ? activeZones[^1].sounds : defaultSounds;
+
+    // -------------------------------------------------------------------------
 
     void Start()
     {
-        if(audioSource == null) audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
         lastPosition = transform.position;
+        stepTimer    = stepInterval * 0.5f; // small initial delay on scene start
     }
 
     void Update()
     {
-        // NEU: Wir ignorieren die Höhe (Y-Achse). 
-        // Wir erstellen temporäre Vektoren, die nur X und Z beachten.
-        Vector3 currentFlatPos = new Vector3(transform.position.x, 0, transform.position.z);
-        Vector3 lastFlatPos = new Vector3(lastPosition.x, 0, lastPosition.z);
+        Vector3 currentFlat = new Vector3(transform.position.x, 0f, transform.position.z);
+        Vector3 lastFlat    = new Vector3(lastPosition.x,       0f, lastPosition.z);
 
-        // Geschwindigkeit basierend auf horizontaler Bewegung berechnen
-        float speed = Vector3.Distance(currentFlatPos, lastFlatPos) / Time.deltaTime;
-        
-        lastPosition = transform.position; // Position für nächsten Frame merken
+        float speed    = Vector3.Distance(currentFlat, lastFlat) / Time.deltaTime;
+        lastPosition   = transform.position;
 
-        // NEU: Prüfung gegen den neuen, höheren Threshold (statt fest 0.1f)
-        if (speed > movementThreshold) 
+        // Timer always counts down â€” never frozen, never zeroed
+        stepTimer -= Time.deltaTime;
+
+        if (speed > movementThreshold)
         {
-            stepTimer -= Time.deltaTime;
-
-            if (stepTimer <= 0)
+            if (stepTimer <= 0f)
             {
                 PlayStep();
                 stepTimer = stepInterval;
@@ -49,18 +67,46 @@ public class Footsteps : MonoBehaviour
         }
         else
         {
-            // Wenn wir stehen (oder nur zittern), Timer resetten
-            stepTimer = 0;
+            // When stopping, ensure a minimum cooldown before the next step fires.
+            // This prevents the instant-sound burst when rapidly changing direction.
+            if (stepTimer < stepInterval * 0.4f)
+                stepTimer = stepInterval * 0.4f;
+        }
+    }
+
+    // CharacterController triggers OnTriggerEnter/Exit on the same GameObject
+    void OnTriggerEnter(Collider other)
+    {
+        foreach (var zone in zones)
+        {
+            if (zone.trigger == other && zone.sounds != null && zone.sounds.Length > 0)
+            {
+                activeZones.Add(zone);
+                return;
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        for (int i = activeZones.Count - 1; i >= 0; i--)
+        {
+            if (activeZones[i].trigger == other)
+            {
+                activeZones.RemoveAt(i);
+                return;
+            }
         }
     }
 
     void PlayStep()
     {
-        if (stepSounds == null || stepSounds.Length == 0) return;
+        AudioClip[] sounds = CurrentSounds;
+        if (sounds == null || sounds.Length == 0) return;
 
-        int n = Random.Range(0, stepSounds.Length);
-        audioSource.volume = Random.Range(0.9f, 1.0f);
-        audioSource.pitch = Random.Range(0.95f, 1.05f);
-        audioSource.PlayOneShot(stepSounds[n]);
+        AudioClip clip = sounds[Random.Range(0, sounds.Length)];
+        audioSource.volume = Random.Range(0.9f,  1.0f);
+        audioSource.pitch  = Random.Range(0.95f, 1.05f);
+        audioSource.PlayOneShot(clip);
     }
 }
