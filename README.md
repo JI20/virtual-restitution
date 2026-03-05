@@ -3,7 +3,6 @@ Virtual Restitution is an interactive Virtual Reality Experience, crafted to cri
 
 ## Impressions
 <img width="1600" height="1049" alt="grafik" src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" />
-<img width="1600" height="1210" alt="grafik" src="https://github.com/user-attachments/assets/8af20e19-e109-4eb9-8840-ec3028678f16" />
 <img width="1600" height="1177" alt="grafik" src="https://github.com/user-attachments/assets/e27e7641-c0d9-470d-8dd2-8c10c64dd7aa" />
 <img width="1600" height="1197" alt="grafik" src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" />
 
