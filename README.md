@@ -4,6 +4,7 @@
 ![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PCVR%20%7C%20Meta%20Quest-lightgrey?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)
+![License](https://img.shields.io/badge/License-Attribution%20Required-orange?style=flat-square)
 
 **Virtual Restitution** is an interactive Virtual Reality experience designed to critique the colonial display of African artifacts. By moving through digital space, the user participates in the symbolic "repatriation" of objects—shifting them from sterile museum vitrines back to their living, functional, and spiritual contexts.
 
