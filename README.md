@@ -12,6 +12,8 @@ Virtual Restitution is an interactive Virtual Reality Experience, crafted to cri
 
 ---
 
+
+
 ## 🛠 Technical Details
 Virtual Restitution is created using **Unity 6 (6000.3.8f1)** and uses **URP** as its render pipeline.
 
