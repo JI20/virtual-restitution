@@ -10,10 +10,12 @@
 ---
 
 ## 📂 Table of Contents
-* [The Experience: A Narrative of Return](#-the-experience-a-narrative-of-return)
+* [The Experience: A Narrative of Return](#️-the-experience-a-narrative-of-return)
 * [Impressions](#️-impressions)
 * [Technical Details](#-technical-details)
-    * [Running the project](#running-the-project)
+    * [Installation & Setup](#installation--setup)
+    * [Features & Pipeline](#features--pipeline)
+    * [VR Controls & Locomotion](#vr-controls--locomotion)
     * [Building the project](#building-the-project)
 * [License](#-license)
 * [Attributions](#️-attributions)
@@ -41,18 +43,37 @@ The experience is structured as a psychological and spatial journey through thre
 ---
 
 ## 🛠 Technical Details
-Virtual Restitution is created using **Unity 6 (6000.3.8f1)** and uses **URP** as its render pipeline.
 
-### Running the project
-To run the project, we recommend starting it from within the Unity Editor.
-1. In the Unity Editor, load the **'Main'** Scene.
-2. Hit **Play** (full support for Meta's Horizon Link). 
-3. Note: Our `SceneManager` script handles additive loading; do not manually load multiple scenes.
+Virtual Restitution was developed using **Unity 6 (Version 6000.3.8f1)** and utilizes the **Universal Render Pipeline (URP)** to handle its lighting and atmospheric effects, integrated with **OpenXR** for virtual reality support.
+
+### Installation & Setup
+> [!WARNING]  
+> This repository uses **Git LFS** (Large File Storage) for high-resolution textures and 3D models. You must have Git LFS installed before cloning, otherwise, your assets will be broken.
+
+1. Install [Git LFS](https://git-lfs.github.com/).
+2. Run `git lfs install` in your terminal.
+3. Clone the repository: `git clone [YOUR-REPO-URL-HERE]`
+4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play. Please ensure no other scenes are loaded simultaneously.
+
+### Features & Pipeline
+* **Scene Management:** We implemented a custom runtime `SceneLoader` script that handles the additive loading and unloading of the correct environments based on player progression.
+* **Lighting & Post-Processing:** The environments rely heavily on **Baked Lighting** to achieve smooth, realistic shadows where possible, combined with several active post-processing effects to transition the atmosphere from cold and sterile to warm and familiar.
+* **Shaders:** The spiritual/holographic characters are driven by a custom **Fresnel Effect Shader Graph**.
+* **Audio:** The project uses **Spatial 3D Audio** to ground the user in the narrative and guide them toward interactions.
+
+### VR Controls & Locomotion
+For the best experience, **standing up** is highly recommended. 
+* **Movement:** Smooth locomotion using the **Left Thumbstick**. While room-scale physical walking (a few steps) is supported, the environments are designed to be navigated via thumbstick movement.
+* **Looking:** Standard 6DOF headset tracking.
+* **Note:** The Right Controller is not actively needed to navigate this experience.
+
+#### Desktop Fallback (Non-VR)
+To speed up development and for accessibility, we built in support for running the project in a standard desktop mode. Without VR glasses, you can navigate the environment using **WASD keys** for movement and the **mouse cursor** to look around.
 
 ### Building the project
-* **Windows (PCVR):** Full support for **Meta's Horizon Link**.
-* **Android (Native Quest):** Theoretically supported, but performance is unoptimized for mobile.
-* **No-VR Mode:** Supports **WASD** and **Mouse** controls for accessibility and rapid testing.
+Please note that we do not provide pre-built versions or executables; you will need to build from source. 
+
+While the project is structured to be buildable for either **Windows (PCVR)** or **Android (Native Meta Quest)**, our primary development focus was on creating a high-fidelity **PCVR game** (using Meta's Horizon Link via Link Cable). We did not extensively test or optimize performance for native standalone VR builds on Android/Meta Quest.
 
 ---
 
@@ -64,6 +85,7 @@ When using the project for any purpose, you must attribute the original author.
 ## 🏗️ Attributions
 
 ### 🗿 3D Models & Assets
+* **University of Education, Winneba (UEW) Collection:** Multiple 3D scans of African artifacts provided by **Ebenezer Kow Abraham**. ([Staff Profile & Publications](https://www.uew.edu.gh/artedu/staff/eeabraham/publications))
 * **Principal Artifact:** [Veranda Post of Enthroned King and Senior Wife](https://cults3d.com/en/3d-model/art/veranda-post-of-enthroned-king-and-senior-wife-opo-ogoga-1910-14) by **ArtInstituteChicago** ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 * **Drums & Instruments:**
     * [African Drum](https://sketchfab.com/3d-models/african-drum-3b09e1d365be4f069417b2f54ba4e7c4) by Inês Freitas ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
