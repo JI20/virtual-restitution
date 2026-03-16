@@ -54,7 +54,27 @@ Virtual Restitution was developed using **Unity 6 (Version 6000.3.8f1)** and uti
 1. Install [Git LFS](https://git-lfs.github.com/).
 2. Run `git lfs install` in your terminal.
 3. Clone the repository: `git clone https://github.com/JI20/virtual-restitution/`
-4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play.
+4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play. Please ensure no other scenes are loaded simultaneously.
+
+### Features & Pipeline
+* **Scene Management:** We implemented a custom runtime `SceneLoader` script that handles the additive loading and unloading of the correct environments based on player progression.
+* **Lighting & Post-Processing:** The environments rely heavily on **Baked Lighting** to achieve smooth, realistic shadows where possible, combined with several active post-processing effects to transition the atmosphere from cold and sterile to warm and familiar.
+* **Shaders:** The spiritual/holographic characters are driven by a custom **Fresnel Effect Shader Graph**.
+* **Audio:** The project uses **Spatial 3D Audio** to ground the user in the narrative and guide them toward interactions.
+
+### VR Controls & Locomotion
+For the best experience, **standing up** is highly recommended. 
+* **Movement:** Smooth locomotion using the **Left Thumbstick**. While room-scale physical walking (a few steps) is supported, the environments are designed to be navigated via thumbstick movement.
+* **Looking:** Standard 6DOF headset tracking.
+* **Note:** The Right Controller is not actively needed to navigate this experience.
+
+#### Desktop Fallback (Non-VR)
+To speed up development and for accessibility, we built in support for running the project in a standard desktop mode. Without VR glasses, you can navigate the environment using **WASD keys** for movement and the **mouse cursor** to look around.
+
+### Building the project
+Please note that we do not provide pre-built versions or executables; you will need to build from source. 
+
+While the project is structured to be buildable for either **Windows (PCVR)** or **Android (Native Meta Quest)**, our primary development focus was on creating a high-fidelity **PCVR game** (using Meta's Horizon Link via Link Cable). We did not extensively test or optimize performance for native standalone VR builds on Android/Meta Quest.
 
 ---
 
