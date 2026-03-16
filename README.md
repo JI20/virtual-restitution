@@ -5,17 +5,28 @@
 ![Platform](https://img.shields.io/badge/Platform-PCVR%20%7C%20Meta%20Quest-lightgrey?style=flat-square)
 ![License](https://img.shields.io/badge/License-Attribution%20Required-orange?style=flat-square)
 
-Virtual Restitution is an interactive Virtual Reality Experience, crafted to critique the display of African objects in western museums that were stolen during colonialism, and aiming to restore their geographical, functional and spiritual contexts.
+**Virtual Restitution** is an interactive Virtual Reality experience designed to critique the colonial display of African artifacts. By moving through digital space, the user participates in the symbolic "repatriation" of objects—shifting them from sterile museum vitrines back to their living, functional, and spiritual contexts.
 
 ---
 
 ## 📂 Table of Contents
+* [The Experience: A Narrative of Return](#-the-experience-a-narrative-of-return)
 * [Impressions](#️-impressions)
 * [Technical Details](#-technical-details)
     * [Running the project](#running-the-project)
     * [Building the project](#building-the-project)
 * [License](#-license)
 * [Attributions](#️-attributions)
+
+---
+
+## 🏛️ The Experience: A Narrative of Return
+
+The experience is structured as a psychological and spatial journey through three distinct phases:
+
+* **The Sterile Void:** A cold, foggy museum room. Artifacts are trapped in glass boxes, stripped of their history, highlighting the "wrongness" of these objects in a Western gallery.
+* **The Archive & The Transit:** An overwhelming archive of inaccessible history leads to a shipping container. This serves as a "reverse passage"—symbolizing the physical return of the objects to their origins.
+* **Contextual Restoration:** The journey ends in a warm Ghanaian evening. In a traditional setting, characters emerge to use the artifacts, restoring their functional and spiritual life through light, sound, and communal harmony.
 
 ---
 
@@ -34,20 +45,14 @@ Virtual Restitution is created using **Unity 6 (6000.3.8f1)** and uses **URP** a
 
 ### Running the project
 To run the project, we recommend starting it from within the Unity Editor.
-1. In the Unity Editor, load the **'Main'** Scene (found in the Scenes folder).
+1. In the Unity Editor, load the **'Main'** Scene.
 2. Hit **Play** (full support for Meta's Horizon Link). 
-3. Note: Only the 'Main' scene should be loaded in the hierarchy; our `SceneManager` script takes care of loading the correct scenes at runtime.
+3. Note: Our `SceneManager` script handles additive loading; do not manually load multiple scenes.
 
 ### Building the project
-While not officially tested, the project should be buildable for either Windows (PCVR) or Android (Meta Quest native) from the Build settings. Please note:
-* We do not provide pre-built versions.
-* Performance on native Android/Quest builds has not been optimized; development focused on **PCVR**.
-
-#### Virtual Reality
-There is full support for **Meta's Horizon Link** (recommended with a Link Cable) on the Meta Quest 3.
-
-#### Without VR
-For development speed and accessibility, the project supports a non-VR mode using **WASD** keys for movement and the **mouse** to look around.
+* **Windows (PCVR):** Full support for **Meta's Horizon Link**.
+* **Android (Native Quest):** Theoretically supported, but performance is unoptimized for mobile.
+* **No-VR Mode:** Supports **WASD** and **Mouse** controls for accessibility and rapid testing.
 
 ---
 
@@ -58,11 +63,25 @@ When using the project for any purpose, you must attribute the original author.
 
 ## 🏗️ Attributions
 
-### 3D Models
-* **Mixamo:** [Insert Link]
-* **Sketchfab Models:** [Insert Link]
+### 🗿 3D Models & Assets
+* **Principal Artifact:** [Veranda Post of Enthroned King and Senior Wife](https://cults3d.com/en/3d-model/art/veranda-post-of-enthroned-king-and-senior-wife-opo-ogoga-1910-14) by **ArtInstituteChicago** ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+* **Drums & Instruments:**
+    * [African Drum](https://sketchfab.com/3d-models/african-drum-3b09e1d365be4f069417b2f54ba4e7c4) by Inês Freitas ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+    * [Tambour](https://sketchfab.com/3d-models/tambour-991bbeb697004e1cb71da68c46464076) by Musée des Confluences ([CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/))
+    * [Djembe African Drum Scan](https://sketchfab.com/3d-models/djembe-african-drum-scan-6db07a048621443992a8048dd62c026f) by heritagemuseum ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+* **Environment & Props:**
+    * [Classic Shipping Container](https://sketchfab.com/3d-models/classic-shipping-container-freegameready-772f4be391a245f699c54e6cf157c58d) by seth_steward ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+    * [Light Ceiling Lamp](https://sketchfab.com/3d-models/light-ceiling-lamp-15mb-eaaab08eac454e59840fa4818fc55ff3) by Al-Ansari ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+    * [Box Package](https://sketchfab.com/3d-models/box-package-0335892364814f5d9006542e03e58741) by bit_is ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+* **Animations:** Character movements provided by [Mixamo](https://www.mixamo.com/).
 
-### Multimedia
-* **Videos:** [Insert Link]
-* **Pictures/Infographics:** [Insert Link]
-* **Textures:** [Insert Link]
+### 🎥 Educational Multimedia
+* [Asante Traditional Buildings](https://www.youtube.com/watch?v=wjJWRyEtzs8) – The Met
+* [Architecture of Asante traditional buildings](https://www.youtube.com/watch?v=nSMT7XGzRno) – JoyNews
+* [The Golden Stool - History of Africa](https://www.youtube.com/watch?v=_KKnpSnXRxo) – BBC News Africa
+* [Ashanti Women: Queens of Golden Legacy](https://www.youtube.com/watch?v=xawEDZ1P0mQ) – AFRO VERSITY
+* [Exploring Ghana's Diverse Culture](https://www.youtube.com/watch?v=7r-WQeHnRF0) – News Central TV
+* [10 African Traditional Dance Styles](https://www.youtube.com/watch?v=3sgaM19f4xU) – ohAFRO
+
+### 🎨 Textures & Materials
+* All environment textures sourced from [ambientCG](https://ambientcg.com/) and [Poly Haven](https://polyhaven.com/license) under **CC0 (Public Domain)**.
