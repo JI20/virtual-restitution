@@ -1,63 +1,49 @@
 # Virtual Restitution
 
-**Virtual Restitution** is an interactive Virtual Reality experience designed to critique the display of African artifacts in Western museums. By leveraging immersive technology, the project aims to "repatriate" stolen objects to their original geographical, functional, and spiritual contexts—challenging colonial narratives through digital restoration.
+Virtual Restitution is an interactive Virtual Reality Experience, crafted to critique the display of African objects in western museums that were stolen during colonialism, and aiming to restore their geographical, functional and spiritual contexts.
+
 ---
 
-## 🖼️ Impressions
+## Impressions
 
-<table style="border-collapse: collapse; width: 100%;">
-  <tr>
-    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
-      <img src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" alt="Contextual Restoration" height="250" style="object-fit: cover;">
-    </td>
-    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
-      <img src="https://github.com/user-attachments/assets/e27e27e27e27e27e27aa444" alt="Immersive Gallery" height="250" style="object-fit: cover;">
-    </td>
-    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
-      <img src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" alt="Spiritual Reconnection" height="250" style="object-fit: cover;">
-    </td>
-  </tr>
-</table>
+| | | |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" height="250"> | <img src="https://github.com/user-attachments/assets/e27e7641-c0d9-470d-8dd2-8c10c64dd7aa" height="250"> | <img src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" height="250"> |
 
 ---
 
 ## 🛠 Technical Details
+Virtual Restitution is created using **Unity 6 (6000.3.8f1)** and uses **URP** as its render pipeline.
 
-### Environment
-* **Engine:** **Unity 6 (Version 6000.3.8f1)**
-* **Render Pipeline:** Universal Render Pipeline (URP)
-* **Target Hardware:** PCVR (Optimized for Meta Quest 3 via Link Cable)
+### Running the project
+To run the project, we recommend starting it from within the Unity Editor.
+1. In the Unity Editor, load the **'Main'** Scene (found in the Scenes folder).
+2. Hit **Play** (full support for Meta's Horizon Link). 
+3. Note: Only the 'Main' scene should be loaded in the hierarchy; our `SceneManager` script handles loading the necessary scenes at runtime.
 
-### Running the Project
-To run the project, we recommend launching it directly from the Unity Editor:
-1.  Open the project in **Unity 6000.3.8f1**.
-2.  Navigate to the `Scenes` folder and open the **'Main'** scene.
-3.  Ensure no other scenes are loaded; our `SceneManager` script handles additive loading at runtime.
-4.  Press **Play**. 
+### Building the project
+While not officially tested, the project should be buildable for either Windows (PCVR) or Android (Meta Quest native) from the Build settings. Please note:
+* We do not provide pre-built versions.
+* Performance on native Android/Quest builds has not been optimized; development focused on **PCVR**.
 
-### Building the Project
-While developed and tested primarily as a **PCVR** experience, the project is buildable for:
-* **Windows (PCVR):** Full support for **Meta Horizon Link** (Link Cable recommended).
-* **Android (Native Quest):** Supported, but please note that performance and optimization for mobile chipsets have not been verified.
-* **No-VR Mode:** For development and accessibility, the project supports non-VR controls using **WASD** for movement and the **Mouse** to look around.
+#### Virtual Reality
+There is full support for **Meta's Horizon Link** (recommended with a Link Cable) on the Meta Quest 3.
+
+#### Without VR
+For development speed and accessibility, the project supports a non-VR mode using **WASD** keys for movement and the **mouse** to look around.
 
 ---
 
 ## 📜 License
-When using this project for any purpose, you must provide attribution to the original author.
-
----
+When using the project for any purpose, you must attribute the original author.
 
 ## 🏗️ Attributions
 
 ### 3D Models
-* **Animations:** [Mixamo](https://www.mixamo.com/)
-* **Artifacts:** [Insert Sketchfab links here]
+* **Mixamo:** [Insert Link]
+* **Sketchfab Models:** [Insert Link]
 
 ### Multimedia
-* **Videos:** [Insert source]
-* **Textures:** [Insert source, e.g., Poly Haven]
-* **Pictures/Infographics:** [Insert source]
-
----
-*Created as a critique of colonial museum practices and an exploration of digital repatriation.*
+* **Videos:** [Insert Link]
+* **Pictures/Infographics:** [Insert Link]
+* **Textures:** [Insert Link]
