@@ -4,7 +4,6 @@
 ![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PCVR%20%7C%20Meta%20Quest-lightgrey?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)
-![License](https://img.shields.io/badge/License-Attribution%20Required-orange?style=flat-square)
 
 **Virtual Restitution** is an interactive Virtual Reality experience designed to critique the colonial display of African artifacts. By moving through digital space, the user participates in the symbolic "repatriation" of objects—shifting them from sterile museum vitrines back to their living, functional, and spiritual contexts.
 
@@ -81,13 +80,9 @@ While the project is structured to be buildable for either **Windows (PCVR)** or
 ## 📜 License & Attribution
 This project is licensed under the **Apache License 2.0**. 
 
-### 📢 Explicit Requirement for Attribution
-If you use, share, modify, or redistribute this project (or any part of it), you **must** provide clear and visible credit to the original creators. 
+If you use, share, modify, or redistribute this project (or any part of it), you **must** provide clear and visible credit to the original creators and explicitly state if changes were made to the original work.
 
-**Please attribute as follows:**
-> *"Virtual Restitution" by [Your Name/Team Name], available at https://github.com/JI20/virtual-restitution/*
-
-If you modify the project, you must include a notice stating that changes were made to the original work.
+For full details on your rights and obligations, please refer to the [LICENSE.md](LICENSE.md) file.
 
 ---
 
