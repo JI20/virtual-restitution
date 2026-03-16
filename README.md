@@ -3,6 +3,7 @@
 ![Unity](https://img.shields.io/badge/Unity-6000.3.8f1-black?style=flat-square&logo=unity)
 ![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-PCVR%20%7C%20Meta%20Quest-lightgrey?style=flat-square)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-Attribution%20Required-orange?style=flat-square)
 
 **Virtual Restitution** is an interactive Virtual Reality experience designed to critique the colonial display of African artifacts. By moving through digital space, the user participates in the symbolic "repatriation" of objects—shifting them from sterile museum vitrines back to their living, functional, and spiritual contexts.
@@ -17,7 +18,7 @@
     * [Features & Pipeline](#features--pipeline)
     * [VR Controls & Locomotion](#vr-controls--locomotion)
     * [Building the project](#building-the-project)
-* [License](#-license)
+* [License & Attribution](#-license--attribution)
 * [Attributions](#️-attributions)
 
 ---
@@ -53,18 +54,20 @@ Virtual Restitution was developed using **Unity 6 (Version 6000.3.8f1)** and uti
 1. Install [Git LFS](https://git-lfs.github.com/).
 2. Run `git lfs install` in your terminal.
 3. Clone the repository: `git clone https://github.com/JI20/virtual-restitution/`
-4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play. Please ensure no other scenes are loaded simultaneously.
-
-### Features & Pipeline
-* **Scene Management:** We implemented a custom runtime `SceneLoader` script that handles the additive loading and unloading of the correct environments based on player progression.
-* **Lighting & Post-Processing:** The environments rely heavily on **Baked Lighting** to achieve smooth, realistic shadows where possible, combined with several active post-processing effects to transition the atmosphere from cold and sterile to warm and familiar.
-* **Shaders:** The spiritual/holographic characters are driven by a custom **Fresnel Effect Shader Graph**.
-* **Audio:** The project uses **Spatial 3D Audio** to ground the user in the narrative and guide them toward interactions.
+4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play.
 
 ---
 
-## 📜 License
-When using the project for any purpose, you must attribute the original author.
+## 📜 License & Attribution
+This project is licensed under the **Apache License 2.0**. 
+
+### 📢 Explicit Requirement for Attribution
+If you use, share, modify, or redistribute this project (or any part of it), you **must** provide clear and visible credit to the original creators. 
+
+**Please attribute as follows:**
+> *"Virtual Restitution" by [Your Name/Team Name], available at https://github.com/JI20/virtual-restitution/*
+
+If you modify the project, you must include a notice stating that changes were made to the original work.
 
 ---
 
@@ -88,6 +91,16 @@ When using the project for any purpose, you must attribute the original author.
 * **Environment:** [LowPoly Environment Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479) by The_Mustacho
 * **Skyboxes:** * [AllSky Free - 10 Skybox Set](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) by RPGWhitelock
     * [Free HDR Skyboxes Pack](https://assetstore.unity.com/packages/2d/textures-materials/sky/free-hdr-skyboxes-pack-175525) by Pro_At_Art
+
+### 🎞️ Historical Documentation & Imagery
+* **Archival Photos:**
+    * [Burning of Coomassie (Kumasi), 1874](https://commons.wikimedia.org/wiki/File:Burning_of_Coomassie.jpg) (Public Domain)
+    * [Interior of Oba's compound, Benin City, 1897](https://fr.wikipedia.org/wiki/Fichier:Interior_of_Oba%27s_compound_burnt_during_siege_of_Benin_City,_1897.jpg) (Public Domain)
+    * [Femmes Galoa de Talagouga du Gabon](https://www.amazinggabon.com/fr/portfolio/galoa/attachment/femmes-galoa-de-talagouga-du-gabon/) via Amazing Gabon
+* **Journalism & Research References:**
+    * [The Decolonization of African Art](https://theswisstimes.ch/fr/the-decolonization-of-african-art-in-swiss-museums/) - The Swiss Times
+    * [Restitution of Royal Objects to Ghana](https://www.voaafrique.com/a/un-mus%C3%A9e-am%C3%A9ricain-restitue-des-objets-royaux-au-ghana-pill%C3%A9s-pendant-la-colonisation/7479729.html) - VOA Afrique
+    * [The Brutish Museums & Benin Bronzes](https://edition.cnn.com/style/article/brutish-museums-benin-bronzes) - CNN Style
 
 ### 🎥 Educational Multimedia
 * [Asante Traditional Buildings](https://www.youtube.com/watch?v=wjJWRyEtzs8) – The Met
