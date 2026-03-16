@@ -1,16 +1,21 @@
 # Virtual Restitution
 
+![Unity](https://img.shields.io/badge/Unity-6000.3.8f1-black?style=flat-square&logo=unity)
+![Render Pipeline](https://img.shields.io/badge/Render%20Pipeline-URP-blue?style=flat-square)
+![Platform](https://img.shields.io/badge/Platform-PCVR%20%7C%20Meta%20Quest-lightgrey?style=flat-square)
+![License](https://img.shields.io/badge/License-Attribution%20Required-orange?style=flat-square)
+
 Virtual Restitution is an interactive Virtual Reality Experience, crafted to critique the display of African objects in western museums that were stolen during colonialism, and aiming to restore their geographical, functional and spiritual contexts.
 
 ---
 
 ## 📂 Table of Contents
-* [Impressions](#-impressions)
+* [Impressions](#️-impressions)
 * [Technical Details](#-technical-details)
     * [Running the project](#running-the-project)
     * [Building the project](#building-the-project)
 * [License](#-license)
-* [Attributions](#-attributions)
+* [Attributions](#️-attributions)
 
 ---
 
