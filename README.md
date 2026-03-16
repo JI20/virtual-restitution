@@ -52,7 +52,7 @@ Virtual Restitution was developed using **Unity 6 (Version 6000.3.8f1)** and uti
 
 1. Install [Git LFS](https://git-lfs.github.com/).
 2. Run `git lfs install` in your terminal.
-3. Clone the repository: `git clone [YOUR-REPO-URL-HERE]`
+3. Clone the repository: `git clone https://github.com/JI20/virtual-restitution/`
 4. Open the project in Unity 6000.3.8f1. Load the **'Main'** Scene (found within the `Scenes` folder) and hit Play. Please ensure no other scenes are loaded simultaneously.
 
 ### Features & Pipeline
@@ -60,20 +60,6 @@ Virtual Restitution was developed using **Unity 6 (Version 6000.3.8f1)** and uti
 * **Lighting & Post-Processing:** The environments rely heavily on **Baked Lighting** to achieve smooth, realistic shadows where possible, combined with several active post-processing effects to transition the atmosphere from cold and sterile to warm and familiar.
 * **Shaders:** The spiritual/holographic characters are driven by a custom **Fresnel Effect Shader Graph**.
 * **Audio:** The project uses **Spatial 3D Audio** to ground the user in the narrative and guide them toward interactions.
-
-### VR Controls & Locomotion
-For the best experience, **standing up** is highly recommended. 
-* **Movement:** Smooth locomotion using the **Left Thumbstick**. While room-scale physical walking (a few steps) is supported, the environments are designed to be navigated via thumbstick movement.
-* **Looking:** Standard 6DOF headset tracking.
-* **Note:** The Right Controller is not actively needed to navigate this experience.
-
-#### Desktop Fallback (Non-VR)
-To speed up development and for accessibility, we built in support for running the project in a standard desktop mode. Without VR glasses, you can navigate the environment using **WASD keys** for movement and the **mouse cursor** to look around.
-
-### Building the project
-Please note that we do not provide pre-built versions or executables; you will need to build from source. 
-
-While the project is structured to be buildable for either **Windows (PCVR)** or **Android (Native Meta Quest)**, our primary development focus was on creating a high-fidelity **PCVR game** (using Meta's Horizon Link via Link Cable). We did not extensively test or optimize performance for native standalone VR builds on Android/Meta Quest.
 
 ---
 
@@ -85,8 +71,8 @@ When using the project for any purpose, you must attribute the original author.
 ## 🏗️ Attributions
 
 ### 🗿 3D Models & Assets
+* **Principal Artifact:** [Veranda Post of Enthroned King and Senior Wife](https://cults3d.com/en/3d-model/art/veranda-post-of-enthroned-king-and-senior-wife-opo-ogoga-1910-14) (Opo Ogoga) by **ArtInstituteChicago** ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 * **University of Education, Winneba (UEW) Collection:** Multiple 3D scans of African artifacts provided by **Ebenezer Kow Abraham**. ([Staff Profile & Publications](https://www.uew.edu.gh/artedu/staff/eeabraham/publications))
-* **Principal Artifact:** [Veranda Post of Enthroned King and Senior Wife](https://cults3d.com/en/3d-model/art/veranda-post-of-enthroned-king-and-senior-wife-opo-ogoga-1910-14) by **ArtInstituteChicago** ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 * **Drums & Instruments:**
     * [African Drum](https://sketchfab.com/3d-models/african-drum-3b09e1d365be4f069417b2f54ba4e7c4) by Inês Freitas ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
     * [Tambour](https://sketchfab.com/3d-models/tambour-991bbeb697004e1cb71da68c46464076) by Musée des Confluences ([CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/))
@@ -96,6 +82,12 @@ When using the project for any purpose, you must attribute the original author.
     * [Light Ceiling Lamp](https://sketchfab.com/3d-models/light-ceiling-lamp-15mb-eaaab08eac454e59840fa4818fc55ff3) by Al-Ansari ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
     * [Box Package](https://sketchfab.com/3d-models/box-package-0335892364814f5d9006542e03e58741) by bit_is ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/))
 * **Animations:** Character movements provided by [Mixamo](https://www.mixamo.com/).
+
+### 📦 Unity Asset Store (Extension Asset License)
+* **Environment:** [Pandazole Nature Environment (Low Poly)](https://assetstore.unity.com/packages/3d/environments/pandazole-nature-environment-low-poly-pack-212621) by Pandazole
+* **Environment:** [LowPoly Environment Pack](https://assetstore.unity.com/packages/3d/environments/landscapes/lowpoly-environment-pack-99479) by The_Mustacho
+* **Skyboxes:** * [AllSky Free - 10 Skybox Set](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) by RPGWhitelock
+    * [Free HDR Skyboxes Pack](https://assetstore.unity.com/packages/2d/textures-materials/sky/free-hdr-skyboxes-pack-175525) by Pro_At_Art
 
 ### 🎥 Educational Multimedia
 * [Asante Traditional Buildings](https://www.youtube.com/watch?v=wjJWRyEtzs8) – The Met
