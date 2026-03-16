@@ -4,13 +4,23 @@ Virtual Restitution is an interactive Virtual Reality Experience, crafted to cri
 
 ---
 
-## Impressions
+## 📂 Table of Contents
+* [Impressions](#-impressions)
+* [Technical Details](#-technical-details)
+    * [Running the project](#running-the-project)
+    * [Building the project](#building-the-project)
+* [License](#-license)
+* [Attributions](#-attributions)
+
+---
+
+## 🖼️ Impressions
 
 | | | |
 | :---: | :---: | :---: |
-| <img src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" height="250"> | <img src="https://github.com/user-attachments/assets/bcc231ac-fd31-4d75-a141-ce6af4f68c76" height="250"> | <img src="https://github.com/user-attachments/assets/1a631af1-b96a-4341-a833-df8745aee5ff" height="250"> |
-| <img src="https://github.com/user-attachments/assets/6fc2da79-ae60-46d6-863a-33ef5767c674" height="250"> | <img src="https://github.com/user-attachments/assets/560a844c-b930-44ac-8d04-400053e7d32f" height="250"> | <img src="https://github.com/user-attachments/assets/e27e7641-c0d9-470d-8dd2-8c10c64dd7aa" height="250"> |
-| <img src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" height="250"> | | |
+| <img src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" height="200"> | <img src="https://github.com/user-attachments/assets/bcc231ac-fd31-4d75-a141-ce6af4f68c76" height="200"> | <img src="https://github.com/user-attachments/assets/1a631af1-b96a-4341-a833-df8745aee5ff" height="200"> |
+| <img src="https://github.com/user-attachments/assets/6fc2da79-ae60-46d6-863a-33ef5767c674" height="200"> | <img src="https://github.com/user-attachments/assets/560a844c-b930-44ac-8d04-400053e7d32f" height="200"> | <img src="https://github.com/user-attachments/assets/e27e7641-c0d9-470d-8dd2-8c10c64dd7aa" height="200"> |
+| <img src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" height="200"> | | |
 
 ---
 
@@ -38,6 +48,8 @@ For development speed and accessibility, the project supports a non-VR mode usin
 
 ## 📜 License
 When using the project for any purpose, you must attribute the original author.
+
+---
 
 ## 🏗️ Attributions
 
