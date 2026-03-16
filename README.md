@@ -1,13 +1,23 @@
 # Virtual Restitution
 
 **Virtual Restitution** is an interactive Virtual Reality experience designed to critique the display of African artifacts in Western museums. By leveraging immersive technology, the project aims to "repatriate" stolen objects to their original geographical, functional, and spiritual contexts—challenging colonial narratives through digital restoration.
-
 ---
 
 ## 🖼️ Impressions
-| Contextual Restoration | Immersive Gallery | Spiritual Reconnection |
-| :--- | :--- | :--- |
-| ![Impression 1](https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976) | ![Impression 2](https://github.com/user-attachments/assets/e27e7641-c0d9-470d-8dd2-8c10c64dd7aa) | ![Impression 3](https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18) |
+
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
+      <img src="https://github.com/user-attachments/assets/f8169578-de50-4534-b44c-767d63cc6976" alt="Contextual Restoration" height="250" style="object-fit: cover;">
+    </td>
+    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
+      <img src="https://github.com/user-attachments/assets/e27e27e27e27e27e27aa444" alt="Immersive Gallery" height="250" style="object-fit: cover;">
+    </td>
+    <td align="center" style="padding: 10px; border: 1px solid #ddd;">
+      <img src="https://github.com/user-attachments/assets/3a7eb5eb-d121-42e5-8a25-80277518ef18" alt="Spiritual Reconnection" height="250" style="object-fit: cover;">
+    </td>
+  </tr>
+</table>
 
 ---
 
